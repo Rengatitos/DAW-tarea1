@@ -1,0 +1,187 @@
+* {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-11/nat1034.ani),
+          url(https://cur.cursors-4u.net/nature/nat-11/nat1034.gif),
+          auto !important;
+}
+
+
+
+body {
+  margin: 0;
+  min-height: 100vh; /* toda la altura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f0e6 url("assets/fondo.gif");
+  background-repeat: repeat;       /* Se repite en mosaico */
+  background-size: 200px 200px;    /* Tamaño de cada “tile” */
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+@keyframes yourAnimation {
+  0% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+
+.page {
+      width: 36rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+}
+
+.container1 {
+      width: 15rem;
+      height: 0.15rem;
+      background: #0b1420;
+      clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 1rem;
+    }
+
+.container1 .left {
+    align-items: center;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+
+.container2 {
+      border-radius: 0px 30px 0 0;
+      height: 0.20rem;
+      background: #0b1420;
+      border: 1.25px solid #0b1420;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      padding: 1rem;
+    }
+
+.container2 .right {
+      text-align: right;
+      color: white;
+      font-weight: bold;
+    }
+
+.container3 {
+      border-radius: 0 0 30px 30px;
+      height: 15rem;
+      background: rgb(212, 219, 240);
+      border: 3px solid #0b1420;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+.left-col {
+      display: flex;
+      
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+    }
+
+.avatar {
+      width: 40%;
+      border-radius: 50%;
+      border: 3px solid #0b1420;
+      margin-bottom: 1rem;
+    }
+
+.name {
+      font-size: 17px;
+      font-weight: bold;
+      color: #0b1420;
+      margin-bottom: 1rem;
+    }
+
+.links {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: #ecedff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.links a img {
+  width: 30px; 
+  height: 30px;
+}
+
+.links a:hover {
+  background: #f0f0f0;
+  transform: scale(1.1);
+}
+.chip {
+  display: inline-block;
+  background: #0b1420;
+  color: #ffffff;
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem 0.2rem 0 0;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+
+
+.right-col {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+table {
+      width: 100%;
+      border: 0.7px solid #0b1420;
+      border-collapse: collapse;
+    }
+
+table th {
+      background: #0b1420;
+      color: white;
+      text-align: left;
+      padding: 0.1rem;
+    }
+
+table td {
+      padding: 0.2rem;
+      border-top: 0.7px solid #0b1420;
+    }
+
+
+
+body:before {
+        content: " ";
+        height: 100vh;
+        width: 100vw;
+        display: block;
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        z-index: 100;
+        background-image: url('https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
+        animation: yourAnimation 1s ease 0s 1 normal forwards;
+        pointer-events: none;}
+        @keyframes yourAnimation { 0.0%{ opacity: 1;} 75%{ opacity: 1; } 100%{ opacity: 0;} } 
+
